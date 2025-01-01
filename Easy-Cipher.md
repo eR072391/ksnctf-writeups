@@ -10,7 +10,12 @@
 ![](img/easy-cipher2.png)
 
 コード検出器では、[ROT13](https://ja.wikipedia.org/wiki/ROT13)の可能性が高いという結果。  
-ROT13は、平文（暗号化前）のそれぞれの文字に対して13文字先に進めた文字に変換して行う暗号化。  
+ROT13は、平文（暗号化前）のそれぞれの文字に対して13文字先に進めた文字に変換して行う暗号化手法。  
 例： A -> N　Hello -> Uryyb
 
+[CyberChef](https://gchq.github.io/CyberChef/)に暗号文を入力して、OperationsからROT13を選択して復号を試みる。  
+
+![](img/easy-cipher3.png)
+
+flagが得られた。  
 
