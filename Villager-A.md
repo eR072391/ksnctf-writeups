@@ -49,3 +49,9 @@ I see. Good bye.
 
 ***解析開始***
 
+SSH先のサーバで解析作業するのは面倒なので、ローカルに持ってくる。  
+`scp -P 10004 q4@ctfq.u1tramarine.blue:~/q4 .`
+
+flag.txtはもちろん権限がなく持ってこれないのでローカルの方で作っておく。
+`echo "FLAG_AAAAAAAAAAAAAAAA" > flag.txt`
+
