@@ -99,7 +99,7 @@ SFVLWWpOa1VGVlkKUWtWWGJtOTNUMVZPYmxCVU1Fc0sK
 
 問題タイトルが"Onion"なのでTorアドレスを疑ったがTorアドレスは56文字のアドレスで、56文字の行は見つからなかった。  
 
-とりあえず1行目を![Cyberchef](https://gchq.github.io/CyberChef/)に入れてみると、Base64の候補が見つかった。  
+とりあえず1行目を[Cyberchef](https://gchq.github.io/CyberChef/)に入れてみると、Base64の候補が見つかった。  
 だが、何回かdecodeしても意味不明の出力。  
 
 次は全部入れてBase64で何回かdecodeしていくと、  
@@ -113,7 +113,7 @@ end
 
 なんか出た。  
 
-これの正体が不明なので、とりあえず1行目をGoogle検索してみると、![uuencode](https://ja.wikipedia.org/wiki/Uuencode)というものと形式が同じであることがわかった。  
+これの正体が不明なので、とりあえず1行目をGoogle検索してみると、[uuencode](https://ja.wikipedia.org/wiki/Uuencode)というものと形式が同じであることがわかった。  
 
 
 
