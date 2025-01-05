@@ -102,7 +102,7 @@ SFVLWWpOa1VGVlkKUWtWWGJtOTNUMVZPYmxCVU1Fc0sK
 とりあえず1行目を[Cyberchef](https://gchq.github.io/CyberChef/)に入れてみると、Base64の候補が見つかった。  
 だが、何回かdecodeしても意味不明の出力。  
 
-次は全部入れてBase64で何回かdecodeしていくと、  
+次は全文字列入れてBase64で何回かdecodeしていくと、  
 
 ```
 begin 666 <data>
