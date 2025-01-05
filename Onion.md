@@ -113,8 +113,19 @@ end
 
 なんか出た。  
 
-これの正体が不明なので、とりあえず1行目をGoogle検索してみると、[uuencode](https://ja.wikipedia.org/wiki/Uuencode)というものと形式が同じであることがわかった。  
+これの正体が不明なので、とりあえず1行目をGoogle検索してみると、[uuencode](https://ja.wikipedia.org/wiki/Uuencode)と形式が同じであることがわかった。  
+"uuencodeは、バイナリデータをテキストデータに変換するUNIX及びUnix系OSのコマンド。或いは、それによって生成されるテキストデータのフォーマット。"  
+らしい。  
 
+python3にdecodeできるライブラリがあるので使う。  
 
+```
+import uu
 
+uu.decode('input.txt', 'dec.txt')
+```
+
+`input.txt`にBase64でdecodeしたbegin 666なんちゃらを書いておく。  
+
+uudecodeを行えばflagが手に入りEND.
 
